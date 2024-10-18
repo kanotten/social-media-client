@@ -1,3 +1,5 @@
+/* eslint-env jest */
+
 import globals from "globals";
 import pluginJs from "@eslint/js";
 

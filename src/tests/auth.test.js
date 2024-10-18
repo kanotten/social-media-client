@@ -1,5 +1,3 @@
-/* global describe, beforeEach, test, expect */
-
 // Import login and logout functions
 import { login, logout } from "../js/api/auth/state.js";
 
