@@ -1,0 +1,117 @@
+.
+├── assets
+│   └── img
+│       └── avatar.jpeg
+├── file_structure.txt
+├── index.html
+├── index.js
+├── package-lock.json
+├── package.json
+└── src
+    ├── js
+    │   ├── api
+    │   │   ├── apiBase.js
+    │   │   ├── auth
+    │   │   │   ├── index.js
+    │   │   │   ├── login.js
+    │   │   │   ├── logout.js
+    │   │   │   ├── register.js
+    │   │   │   └── state.js
+    │   │   ├── constants.js
+    │   │   ├── headers.js
+    │   │   ├── index.js
+    │   │   ├── posts
+    │   │   │   ├── comment.js
+    │   │   │   ├── create.js
+    │   │   │   ├── delete.js
+    │   │   │   ├── index.js
+    │   │   │   ├── react.js
+    │   │   │   ├── read.js
+    │   │   │   └── update.js
+    │   │   └── profiles
+    │   │       ├── delete.js
+    │   │       ├── follow.js
+    │   │       ├── index.js
+    │   │       ├── read.js
+    │   │       ├── unfollow.js
+    │   │       └── update.js
+    │   ├── data
+    │   │   ├── blank
+    │   │   │   └── post.js
+    │   │   └── emoji.js
+    │   ├── index.js
+    │   ├── listeners
+    │   │   ├── auth
+    │   │   │   ├── index.js
+    │   │   │   ├── login.js
+    │   │   │   ├── logout.js
+    │   │   │   └── register.js
+    │   │   ├── index.js
+    │   │   ├── post
+    │   │   │   ├── comment.js
+    │   │   │   ├── index.js
+    │   │   │   └── reaction.js
+    │   │   └── profile
+    │   │       ├── follow.js
+    │   │       ├── index.js
+    │   │       └── unfollow.js
+    │   ├── router
+    │   │   ├── index.js
+    │   │   ├── search.js
+    │   │   └── searchParams.js
+    │   ├── storage
+    │   │   ├── index.js
+    │   │   ├── load.js
+    │   │   ├── remove.js
+    │   │   └── save.js
+    │   ├── templates
+    │   │   ├── comment
+    │   │   │   ├── badge.js
+    │   │   │   ├── comment.js
+    │   │   │   ├── form.js
+    │   │   │   └── index.js
+    │   │   ├── index.js
+    │   │   ├── instance.js
+    │   │   ├── post
+    │   │   │   ├── actions.js
+    │   │   │   ├── comments.js
+    │   │   │   ├── footer.js
+    │   │   │   ├── form.js
+    │   │   │   ├── header.js
+    │   │   │   ├── index.js
+    │   │   │   ├── loader.js
+    │   │   │   ├── media.js
+    │   │   │   ├── page.js
+    │   │   │   ├── reactions.js
+    │   │   │   ├── tabs.js
+    │   │   │   ├── tags.js
+    │   │   │   └── thumbnail.js
+    │   │   └── profile
+    │   │       ├── button.js
+    │   │       ├── followers.js
+    │   │       ├── following.js
+    │   │       ├── follows.js
+    │   │       ├── index.js
+    │   │       ├── page.js
+    │   │       └── thumbnail.js
+    │   ├── tools
+    │   │   ├── clear.js
+    │   │   ├── emojiSubset.js
+    │   │   └── index.js
+    │   ├── ui
+    │   │   ├── auth.js
+    │   │   ├── footer.js
+    │   │   ├── header.js
+    │   │   ├── index.js
+    │   │   ├── modals.js
+    │   │   └── renderView.js
+    │   └── views
+    │       ├── index.js
+    │       ├── postList.js
+    │       ├── postPage.js
+    │       ├── profileList.js
+    │       └── profilePage.js
+    └── scss
+        └── index.scss
+
+25 directories, 90 files
