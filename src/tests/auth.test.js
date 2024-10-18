@@ -1,9 +1,30 @@
-/* global describe, beforeEach, test, expect */
+import { login, logout } from "../js/api/auth/state.js";
 
-import { login, logout } from "../js/api/auth/state";
+// Mock localStorage
+beforeEach(() => {
+  global.localStorage = {
+    store: {},
+    getItem(key) {
+      return this.store[key] || null;
+    },
+    setItem(key, value) {
+      this.store[key] = value.toString();
+    },
+    removeItem(key) {
+      delete this.store[key];
+    },
+    clear() {
+      this.store = {};
+    },
+  };
+});
+
+afterEach(() => {
+  // Clear localStorage after each test to ensure a clean state
+  global.localStorage.clear();
+});
 
 describe("Authentication Tests", () => {
-  // Clear localStorage before each test to ensure a clean state
   beforeEach(() => {
     localStorage.clear();
   });
