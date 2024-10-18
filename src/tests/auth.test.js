@@ -1,4 +1,3 @@
-// Import login and logout functions
 import { login, logout } from "../js/api/auth/state.js";
 
 // Mock localStorage
@@ -35,14 +34,14 @@ describe("Authentication Tests", () => {
   test("Login stores token in localStorage", () => {
     // Mock token for login
     const token = "mockToken123";
-    login(token); // Assuming login(token) stores token in localStorage
-    expect(localStorage.getItem("authToken")).toBe(token);
+    login(token);
+    expect(localStorage.getItem("authToken")).toBe(JSON.stringify(token));
   });
 
   test("Logout clears token from localStorage", () => {
     // Mock token for login and then logout
-    login("mockToken123"); // Assuming login(token) stores token in localStorage
-    logout(); // Assuming logout() removes the token from localStorage
+    login("mockToken123");
+    logout();
     expect(localStorage.getItem("authToken")).toBe(null);
   });
 });
