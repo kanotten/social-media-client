@@ -1,6 +1,6 @@
 /* global describe, beforeEach, test, expect */
 
-import { login, logout } from "../../js/api/auth/state";
+import { login, logout } from "../js/api/auth/state";
 
 describe("Authentication Tests", () => {
   // Clear localStorage before each test to ensure a clean state
