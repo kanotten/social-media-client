@@ -5,6 +5,7 @@ module.exports = {
   moduleDirectories: ["node_modules", "src"],
   moduleNameMapper: {
     "^src/(.*)$": "<rootDir>/src/$1",
+    "^../src/(.*)$": "<rootDir>/src/$1", // Added mapping for relative paths
   },
-  testEnvironment: "node",
+  testEnvironment: "jsdom", // node causes mapping problem, switched to jsdom for browser testing
 };
