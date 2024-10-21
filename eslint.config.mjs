@@ -7,7 +7,8 @@ export default [
       globals: {
         ...globals.browser,
         ...globals.node,
-        ...globals.jest, // Add Jest here
+        ...globals.jest,
+        ...globals.cypress, // Add Cypress globals
       },
     },
   },
